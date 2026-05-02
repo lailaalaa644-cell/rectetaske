@@ -1,14 +1,11 @@
-import React from 'react'
+import Profile from "./Profile";
 
 function App() {
- 
-
   return (
-    <>
-     
-
-    </>
-  )
+    <div className="min-h-screen bg-gray-900 flex items-center justify-center">
+      <Profile />
+    </div>
+  );
 }
 
-export default App
+export default App;
