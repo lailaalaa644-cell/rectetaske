@@ -1,9 +1,8 @@
 import { useEffect, useState } from 'react';
 function App() {
-    const [data, setData] = useState("");
+  const [data, setData] = useState("");
   const [error, setErors] = useState("");
   const [notes, setNotes] = useState([]);
-
   function handelSmit(data) {
     if (data.length < 5) {
       setErors("min 5")
@@ -16,7 +15,6 @@ function App() {
   function handeldelet(index) {
     setNotes(notes.filter((t, i) => i !== index))
   }
-
 return (<>
   <input placeholder='type note' onChange={(e) => { setData(e.target.value) }} value={data} />
   {error && <p>{error}</p>}
